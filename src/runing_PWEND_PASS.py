@@ -21,8 +21,19 @@ def read_parquet_file(spark,file_path="./rock_you_clean.parquet"):
 
 def turning_to_hash(df):
     hashed_df=df.withColumn("sha1",F.upper(F.sha1(F.col("password"))))
-    hashed_df.write.mode("overwrite")\
-    .parquet("rock_you_clean.parquet")
+    writing_parquet_file(df=hashed_df)
+    # hashed_df.write.mode("overwrite")\
+    # .parquet("rock_you_clean.parquet")
+
+def writing_parquet_file(df,method="overwrite",file_path="./rock_you_clean.parquet"):
+
+    match method:
+        case "overwrite":
+            df.write.mode("overwrite")\
+            .parquet(file_path)
+        case _:
+            df.write.parquet(file_path)
+
 
 
 def main():
@@ -60,11 +71,18 @@ def main():
     split_data=after_sha1.withColumn("prefix",F.expr("substring(sha1,1,5)"))\
     .withColumn("suffix",F.expr("substring(sha1,6,35)"))
 
-    pw_df=pw_df.repartition(200,"HASH")
-    split_data=split_data.repartition(200,"suffix")
+    pw_df=pw_df.repartition("HASH")
+    split_data=split_data.repartition("suffix")
 
-    match_df=split_data.join(F.broadcast(pw_df),pw_df["HASH"]==split_data["suffix"])
+    # match_df=split_data.join(F.broadcast(pw_df),pw_df["HASH"]==split_data["suffix"])#ithink broadcast is bad option some how program crashed after I doing this
+    #data set might be small but it have huge number of entry list this might be the reason yea when I doing check I found out broadcasting is better for data set 
+    # that is smaller than data_set<10MB so our rock_you.txt is 100MB +(in compress form) so this aint goon work
+    match_df=split_data.join(pw_df,pw_df["HASH"]==split_data["suffix"])
     match_df.select("password","sha1","COUNT").show(10,truncate=False)
+    writing_parquet_file(df=match_df, method="overwrite", file_path="/home/jack/big_data/Project/rock_you_clean_v2.parquet")
+
+
+    #writing_parquet_file(df=match_df)
 
 
     stop_spark(spark=spark)#remove this when you starting working on next steps
