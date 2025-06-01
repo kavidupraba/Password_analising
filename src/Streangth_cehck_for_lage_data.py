@@ -42,6 +42,14 @@ def turning_string_to_index(df,label_col="password_strength",feature_col="common
 
     return df,index_l_model,index_f_model
 
+def creating_cm(predictions,index_l_model):
+    predictions_p=predictions.select("predicted_Label","true_Label","password").toPandas()
+    cm=confusion_matrix(predictions_p["true_Label"],predictions_p["predicted_Label"],labels=index_l_model.labels)
+    disp=ConfusionMatrixDisplay(confusion_matrix=cm,display_labels=index_l_model.labels)
+    disp.plot(cmap="Blues")
+    plt.title("Confusion Matrix")
+    plt.show()
+
 
 def random_forest(df,logger,tree_count=10,number_of_folds=3,paral_train=2,model_path="/home/jack/big_data/Project/best_rf_model"):
 
@@ -49,6 +57,7 @@ def random_forest(df,logger,tree_count=10,number_of_folds=3,paral_train=2,model_
     rf=RandomForestClassifier(featuresCol="features",labelCol="label",numTrees=tree_count)
     
     logger.info("SPLITING data set to train and test data")
+    
     train_data, test_data = df.randomSplit([0.8, 0.2], seed=42)
     
     logger.info("creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]")
@@ -148,17 +157,19 @@ def main():
         predictions.select("password","predicted_Label","true_Label","common_or_rare_string").show(10, truncate=False)
 
         logger.info("writing result to parquet file")
-        predictions.write.parquet("result_before_truningLabelTosameSample_size.parquet")
+        #predictions.write.parquet("result_before_truningLabelTosameSample_size.parquet")
+        writing_parquet_file(df=predictions,method="overwrite",file_path="/home/jack/big_data/Project/result_before_equal_split.parquet")
 
 
 
         logger.info("confusion_matrix")
-        predictions_p=predictions.select("predicted_Label","true_Label","password").toPandas()
-        cm=confusion_matrix(predictions_p["true_Label"],predictions_p["predicted_Label"],labels=index_l_model.labels)
-        disp=ConfusionMatrixDisplay(confusion_matrix=cm,display_labels=index_l_model.labels)
-        disp.plot(cmap="Blues")
-        plt.title("Confusion Matrix")
-        plt.show()
+        creating_cm(predictions=predictions,index_l_model=index_l_model)
+        # predictions_p=predictions.select("predicted_Label","true_Label","password").toPandas()
+        # cm=confusion_matrix(predictions_p["true_Label"],predictions_p["predicted_Label"],labels=index_l_model.labels)
+        # disp=ConfusionMatrixDisplay(confusion_matrix=cm,display_labels=index_l_model.labels)
+        # disp.plot(cmap="Blues")
+        # plt.title("Confusion Matrix")
+        # plt.show()
     
     finally:
         logger.info("finish program spark stops")
