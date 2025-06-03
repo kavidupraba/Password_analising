@@ -10,6 +10,9 @@ from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 from clustaring_stong_vs_weak import assemble_features
 from create_spark_se import create_spark,stop_spark
 from runing_PWEND_PASS import read_parquet_file,writing_parquet_file
+import timeit
+import numpy as np
+import pandas as pd 
 
 
 
@@ -35,9 +38,38 @@ def spliting_data(df):
 
     return train_df, test_df
 
+#ploting features
+def plot_feature_importance(importance, feature_names, title="Feature Importance"):
+    importances = importance.toArray()
+
+    feat_imp_df = pd.DataFrame({
+        'Feature': feature_names,
+        'Importance': importances
+    }).sort_values(by='Importance', ascending=False)
+
+    plt.figure(figsize=(10, 6))
+    ax = sns.barplot(data=feat_imp_df, x="Importance", y="Feature", palette="viridis")
+    plt.title(title)
+
+    # Add importance values on top of bars
+    for i, v in enumerate(feat_imp_df['Importance']):
+        ax.text(v + 0.01, i, f"{v:.3f}", color='black', va='center')
+
+    plt.tight_layout()
+    plt.show()
 
 
-def random_forest_spit_(df,logger,tree_count=10,number_of_folds=3,paral_train=2,model_path="/home/jack/big_data/Project/best_rf_model_v2"):
+
+#creating benchmark
+def benchmark(func):
+    times = [timeit.timeit(func, number=1) for _ in range(3)]
+    avg = np.mean(times)
+    std = np.std(times)
+    return avg, std
+
+
+
+def random_forest_spit_(df,logger,tree_count=10,number_of_folds=3,paral_train=2,model_path="/home/jack/big_data/Project/best_rf_model_v3"):
 
     logger.info("spliting_data_into_train_and_test")
     train_df,test_df=spliting_data(df=df)
@@ -127,10 +159,12 @@ def random_forest_spit_(df,logger,tree_count=10,number_of_folds=3,paral_train=2,
     pred_c=IndexToString(inputCol="common_or_rare_index",outputCol="common_or_rare_string",labels=index_f_model.labels)
     predictions=pred_c.transform(predictions)
     
+    
     logger.info("saving_model")
     best_model.write().overwrite().save(model_path)
 
-    return predictions,index_l_model
+    return predictions,index_l_model,importance,feature_columns
+
 
 
 def main():
@@ -138,19 +172,34 @@ def main():
     logger.info("starting mian")
     try:
         logger.info("starging spark session")
-        spark=create_spark(partition=200,driver_memory="8g",executor_memory="10g")
+        spark=create_spark(partition=10,driver_memory="8g",executor_memory="10g")
 
         logger.info("reading parquet file /rock_you_label_v1.parquet")
         rock_v1_label=read_parquet_file(spark=spark,file_path="/home/jack/big_data/Project/rock_you_label_v1.parquet")
+        rock_v1_label=rock_v1_label.dropDuplicates()
 
-        predictions,index_l_model=random_forest_spit_(df=rock_v1_label,logger=logger)
+        predictions,index_l_model,importance,feature_columns=random_forest_spit_(df=rock_v1_label,logger=logger)
 
         logger.info("confusion_matrix")
         creating_cm(predictions=predictions,index_l_model=index_l_model)
 
+        logger.info("plotting feature importance")
+        plot_feature_importance(importance=importance,feature_names=feature_columns)
+
+        checker=input("do you wnat to start the bench mark? [Y/n]")
+
+        if checker=="Y":
+            logger.info("staring benchmark")
+            def run_pipline():
+                random_forest_spit_(df=rock_v1_label,logger=logger)
+
+            avg,std=benchmark(lambda: run_pipline())
+            logger.info(f"Bench mark results:{avg:.2f} +/- {std:.2f} seconds")
+
+        
+
         logger.info("writing result to parquet file")
-        #predictions.write.parquet("result_before_truningLabelTosameSample_size.parquet")
-        writing_parquet_file(df=predictions,method="overwrite",file_path="/home/jack/big_data/Project/result_after_equal_split.parquet")
+        writing_parquet_file(df=predictions,method="overwrite",file_path="/home/jack/big_data/Project/result_after_equal_split_vdrop.parquet")
 
 
     finally:

@@ -1,0 +1,406 @@
+2025-06-01 00:29:28,826 - INFO - __main__ - starging spark session
+2025-06-01 00:29:34,637 - INFO - __main__ - reading parquet file /rock_you_label_v1.parquet
+2025-06-01 00:29:53,533 - INFO - __main__ - adding indexer to label's and common_or_rare
+2025-06-01 00:30:04,063 - INFO - __main__ - save index_l_model(index_label_model)
+2025-06-01 00:30:04,063 - INFO - __main__ - finish program spark stops
+2025-06-01 00:32:57,031 - INFO - __main__ - starging spark session
+2025-06-01 00:33:01,546 - INFO - __main__ - reading parquet file /rock_you_label_v1.parquet
+2025-06-01 00:33:17,258 - INFO - __main__ - adding indexer to label's and common_or_rare
+2025-06-01 00:33:27,864 - INFO - __main__ - save index_l_model(index_label_model)
+2025-06-01 00:33:28,717 - INFO - __main__ - save index_f_model(index_feature_model)
+2025-06-01 00:33:29,166 - INFO - __main__ - use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-01 00:33:33,518 - INFO - __main__ - start training random forest model
+2025-06-01 00:33:33,518 - INFO - __main__ - START TRAINING RANDOM FOREST
+2025-06-01 00:33:33,586 - INFO - __main__ - SPLITING data set to train and test data
+2025-06-01 00:33:33,607 - INFO - __main__ - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-01 00:33:33,607 - INFO - __main__ - creating evaluator metricName='accuracy'
+2025-06-01 00:33:33,618 - INFO - __main__ - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-01 00:50:14,824 - INFO - __main__ - finish program spark stops
+2025-06-01 00:52:04,944 - INFO - __main__ - starging spark session
+2025-06-01 00:52:10,586 - INFO - __main__ - reading parquet file /rock_you_label_v1.parquet
+2025-06-01 00:52:27,338 - INFO - __main__ - adding indexer to label's and common_or_rare
+2025-06-01 00:52:37,542 - INFO - __main__ - save index_l_model(index_label_model)
+2025-06-01 00:52:38,134 - INFO - __main__ - save index_f_model(index_feature_model)
+2025-06-01 00:52:38,408 - INFO - __main__ - use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-01 00:52:42,679 - INFO - __main__ - start training random forest model
+2025-06-01 00:52:42,679 - INFO - __main__ - START TRAINING RANDOM FOREST
+2025-06-01 00:52:42,747 - INFO - __main__ - SPLITING data set to train and test data
+2025-06-01 00:52:42,772 - INFO - __main__ - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-01 00:52:42,773 - INFO - __main__ - creating evaluator metricName='accuracy'
+2025-06-01 00:52:42,781 - INFO - __main__ - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-01 01:09:29,794 - INFO - __main__ - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.20750228774516682,0.01736048194377866,0.1644044511788056,0.07844383447685405,0.04298029497955228,0.05560756928392335,0.019145772169249037,0.0035283051831284905,0.04341704718747797,0.36180130536367305,0.005808650488390567])
+2025-06-01 01:10:06,546 - INFO - __main__ - best model accuracy:0.9975705291858421
+2025-06-01 01:10:41,306 - INFO - __main__ - Matirc_name:f1 Score: 0.9964266775824998
+2025-06-01 01:11:16,012 - INFO - __main__ - Matirc_name:weightedRecall Score: 0.9975705291858421
+2025-06-01 01:11:50,757 - INFO - __main__ - Matirc_name:weightedPrecision Score: 0.995292963862231
+2025-06-01 01:11:51,322 - INFO - __main__ - turning predcition to words
+2025-06-01 01:11:51,341 - INFO - __main__ - turning real label to words
+2025-06-01 01:11:51,353 - INFO - __main__ - turning feature back to words
+2025-06-01 01:11:51,369 - INFO - __main__ - showing table
+2025-06-01 01:12:08,570 - INFO - __main__ - confusion_matrix
+2025-06-01 01:13:03,798 - INFO - __main__ - finish program spark stops
+2025-06-01 01:17:54,169 - INFO - __main__ - starging spark session
+2025-06-01 01:17:59,252 - INFO - __main__ - reading parquet file /rock_you_label_v1.parquet
+2025-06-01 01:18:15,225 - INFO - __main__ - adding indexer to label's and common_or_rare
+2025-06-01 01:18:25,746 - INFO - __main__ - save index_l_model(index_label_model)
+2025-06-01 01:18:26,393 - INFO - __main__ - save index_f_model(index_feature_model)
+2025-06-01 01:18:26,745 - INFO - __main__ - use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-01 01:18:30,977 - INFO - __main__ - start training random forest model
+2025-06-01 01:18:30,978 - INFO - __main__ - START TRAINING RANDOM FOREST
+2025-06-01 01:18:31,061 - INFO - __main__ - SPLITING data set to train and test data
+2025-06-01 01:18:31,089 - INFO - __main__ - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-01 01:18:31,090 - INFO - __main__ - creating evaluator metricName='accuracy'
+2025-06-01 01:18:31,097 - INFO - __main__ - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-01 01:35:28,857 - INFO - __main__ - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.1493083966948779,0.01270425414881118,0.12280228592572422,0.08640233383369425,0.07110950285714687,0.093147113571097,0.0167883482872312,0.0024885742212048378,0.05618655521942935,0.38097147395078235,0.008091161290000844])
+2025-06-01 01:36:05,161 - INFO - __main__ - best model accuracy:0.9954850263697135
+2025-06-01 01:36:40,003 - INFO - __main__ - Matirc_name:f1 Score: 0.9943396012342077
+2025-06-01 01:37:14,476 - INFO - __main__ - Matirc_name:weightedRecall Score: 0.9954850263697135
+2025-06-01 01:37:48,906 - INFO - __main__ - Matirc_name:weightedPrecision Score: 0.9931968383176762
+2025-06-01 01:37:49,522 - INFO - __main__ - turning predcition to words
+2025-06-01 01:37:49,568 - INFO - __main__ - turning real label to words
+2025-06-01 01:37:49,585 - INFO - __main__ - turning feature back to words
+2025-06-01 01:37:49,601 - INFO - __main__ - showing table
+2025-06-01 01:38:06,875 - INFO - __main__ - confusion_matrix
+2025-06-01 02:51:40,871 - INFO - __main__ - finish program spark stops
+2025-06-01 06:00:34,828 - INFO - Streangth_cehck_for_lage_data - starting mian
+2025-06-01 06:00:34,829 - INFO - Streangth_cehck_for_lage_data - starging spark session
+2025-06-01 06:00:39,453 - INFO - Streangth_cehck_for_lage_data - reading parquet file /rock_you_label_v1.parquet
+2025-06-01 06:00:55,262 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-01 06:01:00,122 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-01 06:01:00,720 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-01 06:01:01,031 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-01 06:01:01,130 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-01 06:01:01,158 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-01 06:01:01,185 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-01 06:01:01,209 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-01 06:01:06,860 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-01 06:01:16,699 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-01 06:01:16,742 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-01 06:01:16,742 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-01 06:01:16,750 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-01 06:04:22,180 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.054326017632204925,0.004834164200585,0.044469114469371705,0.08411537911219387,0.16368543071890795,0.03309992583813242,0.23224332506814965,0.0007029555332656696,0.21442859185249272,0.1670159450904793,0.001079150484216788])
+2025-06-01 06:05:01,644 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9988251332847627
+2025-06-01 06:05:40,352 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9988258410356087
+2025-06-01 06:06:18,124 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9988251332847627
+2025-06-01 06:06:55,691 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9988298804024761
+2025-06-01 06:06:55,691 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-01 06:06:55,727 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-01 06:06:55,738 - INFO - Streangth_cehck_for_lage_data - saving_model
+2025-06-01 06:06:56,628 - INFO - Streangth_cehck_for_lage_data - confusion_matrix
+2025-06-01 06:14:20,084 - INFO - Streangth_cehck_for_lage_data - starting mian
+2025-06-01 06:14:20,084 - INFO - Streangth_cehck_for_lage_data - starging spark session
+2025-06-01 06:14:24,693 - INFO - Streangth_cehck_for_lage_data - reading parquet file /rock_you_label_v1.parquet
+2025-06-01 06:14:39,866 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-01 06:14:45,056 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-01 06:14:45,574 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-01 06:14:45,815 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-01 06:14:45,909 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-01 06:14:45,935 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-01 06:14:45,962 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-01 06:14:46,000 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-01 06:14:51,157 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-01 06:15:01,088 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-01 06:15:01,125 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-01 06:15:01,126 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-01 06:15:01,133 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-01 06:18:06,421 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.09439541132859765,0.0037151189986066257,0.053560325844857676,0.06008586579085209,0.13326082357599695,0.020824161612506383,0.1494663584698854,0.0005419414352477709,0.2962517844986857,0.18647094167255787,0.0014272667722061705])
+2025-06-01 06:18:46,305 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9999136179054491
+2025-06-01 06:19:23,461 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.999913647472771
+2025-06-01 06:20:00,632 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9999136179054491
+2025-06-01 06:20:37,078 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.999913739791475
+2025-06-01 06:20:37,078 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-01 06:20:37,114 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-01 06:20:37,128 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-01 06:20:37,147 - INFO - Streangth_cehck_for_lage_data - saving_model
+2025-06-01 06:20:37,960 - INFO - Streangth_cehck_for_lage_data - confusion_matrix
+2025-06-01 06:25:31,485 - INFO - Streangth_cehck_for_lage_data - writing result to parquet file
+2025-06-02 04:52:54,239 - INFO - Streangth_cehck_for_lage_data - starting mian
+2025-06-02 04:52:54,240 - INFO - Streangth_cehck_for_lage_data - starging spark session
+2025-06-02 04:53:00,874 - INFO - Streangth_cehck_for_lage_data - reading parquet file /rock_you_label_v1.parquet
+2025-06-02 04:53:27,219 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 04:53:33,318 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 04:53:33,774 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 04:53:34,002 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 04:53:34,105 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 04:53:34,132 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 04:53:34,183 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 04:53:34,216 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 04:53:39,998 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 04:53:51,024 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 04:53:51,073 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 04:53:51,073 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 04:53:51,080 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 04:56:57,089 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.06971428582275817,0.0044115649645845535,0.0635760430766085,0.061319718879770016,0.19551627059858678,0.026062834579768407,0.17007423216292386,0.0014354203410917895,0.2167134838297533,0.18907165325386002,0.0021044924902946524])
+2025-06-02 04:57:37,826 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9943727332600981
+2025-06-02 04:58:17,195 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9944731516745068
+2025-06-02 04:58:55,004 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9943727332600982
+2025-06-02 04:59:32,777 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9947158591680512
+2025-06-02 04:59:32,777 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 04:59:32,808 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 04:59:32,823 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 05:00:23,583 - INFO - Streangth_cehck_for_lage_data - staring benchmark
+2025-06-02 05:00:23,584 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 05:00:25,628 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 05:00:25,789 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 05:00:25,913 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 05:00:25,933 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 05:00:25,944 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 05:00:25,953 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 05:00:25,963 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 05:00:29,080 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 05:00:35,521 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 05:00:35,524 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 05:00:35,525 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 05:00:35,528 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 05:03:25,985 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.06971428582275817,0.0044115649645845535,0.0635760430766085,0.061319718879770016,0.19551627059858678,0.026062834579768407,0.17007423216292386,0.0014354203410917895,0.2167134838297533,0.18907165325386002,0.0021044924902946524])
+2025-06-02 05:04:04,569 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9943727332600981
+2025-06-02 05:04:42,667 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9944731516745068
+2025-06-02 05:05:19,996 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9943727332600982
+2025-06-02 05:05:58,908 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9947158591680512
+2025-06-02 05:05:58,908 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 05:05:58,932 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 05:05:58,944 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 05:05:59,011 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 05:06:01,755 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 05:06:01,956 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 05:06:02,082 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 05:06:02,102 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 05:06:02,110 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 05:06:02,119 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 05:06:02,128 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 05:06:05,911 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 05:06:14,464 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 05:06:14,467 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 05:06:14,468 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 05:06:14,470 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 05:08:56,386 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.06971428582275817,0.0044115649645845535,0.0635760430766085,0.061319718879770016,0.19551627059858678,0.026062834579768407,0.17007423216292386,0.0014354203410917895,0.2167134838297533,0.18907165325386002,0.0021044924902946524])
+2025-06-02 05:09:34,915 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9943727332600981
+2025-06-02 05:10:12,643 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9944731516745068
+2025-06-02 05:10:52,162 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9943727332600982
+2025-06-02 05:11:29,267 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9947158591680512
+2025-06-02 05:11:29,267 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 05:11:29,291 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 05:11:29,302 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 05:11:29,353 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 05:11:31,832 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 05:11:32,011 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 05:11:32,130 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 05:11:32,147 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 05:11:32,159 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 05:11:32,167 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 05:11:32,175 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 05:11:35,805 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 05:11:44,250 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 05:11:44,252 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 05:11:44,252 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 05:11:44,255 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 05:14:26,344 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.06971428582275817,0.0044115649645845535,0.0635760430766085,0.061319718879770016,0.19551627059858678,0.026062834579768407,0.17007423216292386,0.0014354203410917895,0.2167134838297533,0.18907165325386002,0.0021044924902946524])
+2025-06-02 05:15:05,863 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9943727332600981
+2025-06-02 05:15:44,129 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9944731516745068
+2025-06-02 05:16:21,917 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9943727332600982
+2025-06-02 05:16:59,316 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9947158591680512
+2025-06-02 05:16:59,316 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 05:16:59,334 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 05:16:59,349 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 05:16:59,400 - INFO - Streangth_cehck_for_lage_data - Bench mark results:331.89 +/- 2.46 seconds
+2025-06-02 05:16:59,400 - INFO - Streangth_cehck_for_lage_data - confusion_matrix
+2025-06-02 12:25:18,222 - INFO - Streangth_cehck_for_lage_data - starting mian
+2025-06-02 12:25:18,222 - INFO - Streangth_cehck_for_lage_data - starging spark session
+2025-06-02 12:25:23,325 - INFO - Streangth_cehck_for_lage_data - reading parquet file /rock_you_label_v1.parquet
+2025-06-02 12:25:38,597 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 12:25:43,639 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 12:25:44,047 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 12:25:44,298 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 12:25:44,404 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 12:25:44,431 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 12:25:44,467 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 12:25:44,490 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 12:25:49,631 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 12:25:59,842 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 12:25:59,886 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 12:25:59,886 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 12:25:59,893 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 12:29:01,450 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.0713648921129522,0.003565509502747516,0.06690395801497302,0.0683917398806929,0.21702769001729058,0.029041886180907844,0.061008404624732816,0.00044238154917090975,0.24432235236230695,0.2369070659455521,0.0010241198086731425])
+2025-06-02 12:29:40,674 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9999471875324372
+2025-06-02 12:30:19,081 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9999471889730897
+2025-06-02 12:30:57,349 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9999471875324372
+2025-06-02 12:31:35,717 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9999471972230938
+2025-06-02 12:31:35,717 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 12:31:35,746 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 12:31:35,759 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 12:31:35,773 - INFO - Streangth_cehck_for_lage_data - confusion_matrix
+2025-06-02 12:41:30,447 - INFO - Streangth_cehck_for_lage_data - plotting feature importance
+2025-06-02 16:09:49,615 - INFO - __main__ - starging spark session
+2025-06-02 16:09:54,264 - INFO - __main__ - reading parquet file /rock_you_label_v1.parquet
+2025-06-02 16:10:12,134 - INFO - __main__ - adding indexer to label's and common_or_rare
+2025-06-02 16:10:22,536 - INFO - __main__ - save index_l_model(index_label_model)
+2025-06-02 16:10:23,183 - INFO - __main__ - save index_f_model(index_feature_model)
+2025-06-02 16:10:23,459 - INFO - __main__ - use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 16:10:27,924 - INFO - __main__ - start training random forest model
+2025-06-02 16:10:27,924 - INFO - __main__ - START TRAINING RANDOM FOREST
+2025-06-02 16:10:27,982 - INFO - __main__ - SPLITING data set to train and test data
+2025-06-02 16:10:28,011 - INFO - __main__ - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 16:10:28,011 - INFO - __main__ - creating evaluator metricName='accuracy'
+2025-06-02 16:10:28,018 - INFO - __main__ - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 16:27:22,663 - INFO - __main__ - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.23779766227127067,0.005464398649819834,0.09468839127214204,0.05933766721942295,0.04155451048362394,0.0968277316146014,0.025224005994405146,0.009865004336914271,0.041624522765572526,0.3830762956977266,0.004539809694500562])
+2025-06-02 16:27:58,771 - INFO - __main__ - best model accuracy:0.9973742259845253
+2025-06-02 16:28:33,702 - INFO - __main__ - Matirc_name:f1 Score: 0.9962303623544346
+2025-06-02 16:29:08,257 - INFO - __main__ - Matirc_name:weightedRecall Score: 0.9973742259845253
+2025-06-02 16:29:42,633 - INFO - __main__ - Matirc_name:weightedPrecision Score: 0.9950950811402463
+2025-06-02 16:29:43,192 - INFO - __main__ - turning predcition to words
+2025-06-02 16:29:43,212 - INFO - __main__ - turning real label to words
+2025-06-02 16:29:43,228 - INFO - __main__ - turning feature back to words
+2025-06-02 16:29:43,245 - INFO - __main__ - showing table
+2025-06-02 16:29:59,504 - INFO - __main__ - confusion_matrix
+2025-06-02 16:31:44,715 - INFO - __main__ - staring benchmark
+2025-06-02 16:31:44,716 - INFO - __main__ - START TRAINING RANDOM FOREST
+2025-06-02 16:31:44,720 - INFO - __main__ - SPLITING data set to train and test data
+2025-06-02 16:31:44,725 - INFO - __main__ - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 16:31:44,725 - INFO - __main__ - creating evaluator metricName='accuracy'
+2025-06-02 16:31:44,728 - INFO - __main__ - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 16:48:49,278 - INFO - __main__ - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.23779766227127067,0.005464398649819834,0.09468839127214204,0.05933766721942295,0.04155451048362394,0.0968277316146014,0.025224005994405146,0.009865004336914271,0.041624522765572526,0.3830762956977266,0.004539809694500562])
+2025-06-02 16:49:28,634 - INFO - __main__ - best model accuracy:0.9973742259845253
+2025-06-02 16:50:03,602 - INFO - __main__ - Matirc_name:f1 Score: 0.9962303623544346
+2025-06-02 16:50:38,239 - INFO - __main__ - Matirc_name:weightedRecall Score: 0.9973742259845253
+2025-06-02 16:51:12,476 - INFO - __main__ - Matirc_name:weightedPrecision Score: 0.9950950811402463
+2025-06-02 16:51:12,844 - INFO - __main__ - START TRAINING RANDOM FOREST
+2025-06-02 16:51:12,847 - INFO - __main__ - SPLITING data set to train and test data
+2025-06-02 16:51:12,851 - INFO - __main__ - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 16:51:12,851 - INFO - __main__ - creating evaluator metricName='accuracy'
+2025-06-02 16:51:12,854 - INFO - __main__ - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 17:09:11,076 - INFO - __main__ - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.23779766227127067,0.005464398649819834,0.09468839127214204,0.05933766721942295,0.04155451048362394,0.0968277316146014,0.025224005994405146,0.009865004336914271,0.041624522765572526,0.3830762956977266,0.004539809694500562])
+2025-06-02 17:09:47,723 - INFO - __main__ - best model accuracy:0.9973742259845253
+2025-06-02 17:10:27,329 - INFO - __main__ - Matirc_name:f1 Score: 0.9962303623544346
+2025-06-02 17:11:05,330 - INFO - __main__ - Matirc_name:weightedRecall Score: 0.9973742259845253
+2025-06-02 17:11:39,761 - INFO - __main__ - Matirc_name:weightedPrecision Score: 0.9950950811402463
+2025-06-02 17:11:40,152 - INFO - __main__ - START TRAINING RANDOM FOREST
+2025-06-02 17:11:40,155 - INFO - __main__ - SPLITING data set to train and test data
+2025-06-02 17:11:40,159 - INFO - __main__ - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 17:11:40,159 - INFO - __main__ - creating evaluator metricName='accuracy'
+2025-06-02 17:11:40,163 - INFO - __main__ - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 17:28:37,559 - INFO - __main__ - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.23779766227127067,0.005464398649819834,0.09468839127214204,0.05933766721942295,0.04155451048362394,0.0968277316146014,0.025224005994405146,0.009865004336914271,0.041624522765572526,0.3830762956977266,0.004539809694500562])
+2025-06-02 17:29:12,693 - INFO - __main__ - best model accuracy:0.9973742259845253
+2025-06-02 17:29:47,363 - INFO - __main__ - Matirc_name:f1 Score: 0.9962303623544346
+2025-06-02 17:30:21,892 - INFO - __main__ - Matirc_name:weightedRecall Score: 0.9973742259845253
+2025-06-02 17:30:56,297 - INFO - __main__ - Matirc_name:weightedPrecision Score: 0.9950950811402463
+2025-06-02 17:30:56,689 - INFO - __main__ - Bench mark results:1183.96 +/- 30.99 seconds
+2025-06-02 17:30:56,689 - INFO - __main__ - finish program spark stops
+2025-06-02 18:08:06,621 - INFO - Streangth_cehck_for_lage_data - starting mian
+2025-06-02 18:08:06,621 - INFO - Streangth_cehck_for_lage_data - starging spark session
+2025-06-02 18:08:12,403 - INFO - Streangth_cehck_for_lage_data - reading parquet file /rock_you_label_v1.parquet
+2025-06-02 18:08:29,185 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 18:08:34,495 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 18:08:35,113 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 18:08:35,483 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 18:08:35,613 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 18:08:35,642 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 18:08:35,687 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 18:08:35,720 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 18:08:41,026 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 18:08:51,364 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 18:08:51,438 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 18:08:51,438 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 18:08:51,446 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 18:11:55,589 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.04462550594599043,0.0027290889708851173,0.044933655371811,0.0774345072301773,0.26188525802218754,0.060344203464061476,0.06986347773854999,0.0007206040402774383,0.21744966408803432,0.2195175550380708,0.000496480089954421])
+2025-06-02 18:12:35,459 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9977001294045914
+2025-06-02 18:13:13,751 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9978013522614729
+2025-06-02 18:13:52,786 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9977001294045914
+2025-06-02 18:14:31,336 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9980420962067375
+2025-06-02 18:14:31,336 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 18:14:31,372 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 18:14:31,389 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 18:14:31,403 - INFO - Streangth_cehck_for_lage_data - confusion_matrix
+2025-06-02 18:18:19,910 - INFO - Streangth_cehck_for_lage_data - plotting feature importance
+2025-06-02 18:18:47,443 - INFO - Streangth_cehck_for_lage_data - staring benchmark
+2025-06-02 18:18:47,443 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 18:18:50,243 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 18:18:50,421 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 18:18:50,573 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 18:18:50,596 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 18:18:50,613 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 18:18:50,631 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 18:18:50,641 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 18:18:53,782 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 18:19:00,712 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 18:19:00,715 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 18:19:00,715 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 18:19:00,718 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 18:22:19,690 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.04462550594599043,0.0027290889708851173,0.044933655371811,0.0774345072301773,0.26188525802218754,0.060344203464061476,0.06986347773854999,0.0007206040402774383,0.21744966408803432,0.2195175550380708,0.000496480089954421])
+2025-06-02 18:23:06,071 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9977001294045914
+2025-06-02 18:23:51,018 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9978013522614729
+2025-06-02 18:24:32,763 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9977001294045914
+2025-06-02 18:25:15,090 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9980420962067375
+2025-06-02 18:25:15,090 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 18:25:15,111 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 18:25:15,121 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 18:25:15,177 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 18:25:18,134 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 18:25:18,303 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 18:25:18,510 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 18:25:18,541 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 18:25:18,556 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 18:25:18,567 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 18:25:18,583 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 18:25:22,216 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 18:25:31,253 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 18:25:31,256 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 18:25:31,257 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 18:25:31,259 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 18:28:27,729 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.04462550594599043,0.0027290889708851173,0.044933655371811,0.0774345072301773,0.26188525802218754,0.060344203464061476,0.06986347773854999,0.0007206040402774383,0.21744966408803432,0.2195175550380708,0.000496480089954421])
+2025-06-02 18:29:07,267 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9977001294045914
+2025-06-02 18:29:46,357 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9978013522614729
+2025-06-02 18:30:24,708 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9977001294045914
+2025-06-02 18:31:03,182 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9980420962067375
+2025-06-02 18:31:03,182 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 18:31:03,200 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 18:31:03,209 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 18:31:03,266 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-02 18:31:05,771 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-02 18:31:05,965 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-02 18:31:06,094 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-02 18:31:06,116 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-02 18:31:06,127 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-02 18:31:06,136 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-02 18:31:06,143 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 18:31:09,677 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-02 18:31:18,053 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-02 18:31:18,056 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-02 18:31:18,056 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-02 18:31:18,058 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-02 18:34:07,449 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.04462550594599043,0.0027290889708851173,0.044933655371811,0.0774345072301773,0.26188525802218754,0.060344203464061476,0.06986347773854999,0.0007206040402774383,0.21744966408803432,0.2195175550380708,0.000496480089954421])
+2025-06-02 18:34:51,580 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9977001294045914
+2025-06-02 18:35:30,664 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9978013522614729
+2025-06-02 18:36:09,381 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9977001294045914
+2025-06-02 18:36:47,802 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9980420962067375
+2025-06-02 18:36:47,802 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-02 18:36:47,819 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-02 18:36:47,830 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-02 18:36:47,883 - INFO - Streangth_cehck_for_lage_data - Bench mark results:360.10 +/- 19.56 seconds
+2025-06-03 14:29:19,928 - INFO - Streangth_cehck_for_lage_data - starting mian
+2025-06-03 14:29:19,928 - INFO - Streangth_cehck_for_lage_data - starging spark session
+2025-06-03 14:29:24,882 - INFO - Streangth_cehck_for_lage_data - reading parquet file /rock_you_label_v1.parquet
+2025-06-03 14:29:41,903 - INFO - Streangth_cehck_for_lage_data - spliting_data_into_train_and_test
+2025-06-03 14:30:33,568 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-03 14:30:34,075 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-03 14:30:34,391 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-03 14:30:34,531 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-03 14:30:34,573 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-03 14:30:34,600 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-03 14:30:34,627 - INFO - Streangth_cehck_for_lage_data - *FOR train_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-03 14:31:25,813 - INFO - Streangth_cehck_for_lage_data - *FOR test_df use assembler to assemble features (keep your features in digit foramt float or int python don't have double)
+2025-06-03 14:32:38,877 - INFO - Streangth_cehck_for_lage_data - starting training RANDOMFOREST
+2025-06-03 14:32:38,944 - INFO - Streangth_cehck_for_lage_data - creating parameter grid max_depth[2,4,6], impurity check both [gini,entropy]
+2025-06-03 14:32:38,944 - INFO - Streangth_cehck_for_lage_data - creating evaluator metricName='accuracy'
+2025-06-03 14:32:38,951 - INFO - Streangth_cehck_for_lage_data - starging CrossValidator add parallelism  and set it to 2 like parallelism=2 if it take time
+2025-06-03 14:41:19,282 - INFO - Streangth_cehck_for_lage_data - best model importance: (11,[0,1,2,3,4,5,6,7,8,9,10],[0.06302020675239062,0.00192167943919591,0.04400775918850146,0.05260915220129377,0.1768179387872351,0.024455934998526795,0.22797227076581725,0.0015945174925596182,0.255727307587229,0.14849364047072,0.0033795923165304926])
+2025-06-03 14:42:56,018 - INFO - Streangth_cehck_for_lage_data - best model accuracy:0.9886899948063185
+2025-06-03 14:44:32,757 - INFO - Streangth_cehck_for_lage_data - Matirc_name:f1 Score: 0.9886362023829031
+2025-06-03 14:46:07,340 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedRecall Score: 0.9886899948063185
+2025-06-03 14:47:45,525 - INFO - Streangth_cehck_for_lage_data - Matirc_name:weightedPrecision Score: 0.9887913740828267
+2025-06-03 14:47:45,525 - INFO - Streangth_cehck_for_lage_data - turning predcition to words
+2025-06-03 14:47:45,615 - INFO - Streangth_cehck_for_lage_data - turning real label to words
+2025-06-03 14:47:45,642 - INFO - Streangth_cehck_for_lage_data - turning feature back to words
+2025-06-03 14:47:45,658 - INFO - Streangth_cehck_for_lage_data - saving_model
+2025-06-03 14:47:46,889 - INFO - Streangth_cehck_for_lage_data - confusion_matrix
+2025-06-03 15:13:54,382 - INFO - Streangth_cehck_for_lage_data - plotting feature importance
+2025-06-03 15:14:31,066 - INFO - Streangth_cehck_for_lage_data - writing result to parquet file

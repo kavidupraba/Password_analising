@@ -1,0 +1,215 @@
+2025-06-03 16:27:13,363 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 16:27:19,075 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 16:27:40,956 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 16:27:40,959 - INFO - Streangth_cehck_for_lage_data - showing_sample
+2025-06-03 16:28:23,899 - INFO - Streangth_cehck_for_lage_data - gettig fraction of the data for test run
+2025-06-03 16:28:23,911 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 16:29:21,290 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 16:29:21,346 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 17:47:54,906 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 17:47:59,819 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 17:48:16,750 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 17:48:16,754 - INFO - Streangth_cehck_for_lage_data - showing_sample
+2025-06-03 17:48:58,690 - INFO - Streangth_cehck_for_lage_data - gettig fraction of the data for test run
+2025-06-03 17:48:58,694 - INFO - Streangth_cehck_for_lage_data - creating udf for encoding
+2025-06-03 17:48:58,696 - INFO - Streangth_cehck_for_lage_data - apply udf to sample data set
+2025-06-03 17:48:58,730 - INFO - Streangth_cehck_for_lage_data - droping normal password column form encoded_df
+2025-06-03 17:48:58,735 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 17:49:59,520 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 17:49:59,537 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 17:58:49,442 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 17:58:54,344 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 17:59:11,431 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 17:59:11,435 - INFO - Streangth_cehck_for_lage_data - showing_sample
+2025-06-03 17:59:54,932 - INFO - Streangth_cehck_for_lage_data - gettig fraction of the data for test run
+2025-06-03 17:59:54,939 - INFO - Streangth_cehck_for_lage_data - creating udf for encoding
+2025-06-03 17:59:54,944 - INFO - Streangth_cehck_for_lage_data - apply udf to sample data set
+2025-06-03 17:59:54,986 - INFO - Streangth_cehck_for_lage_data - droping normal password column form encoded_df
+2025-06-03 17:59:54,996 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-03 17:59:55,460 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-03 17:59:55,749 - INFO - Streangth_cehck_for_lage_data - transforming label and features into index
+2025-06-03 17:59:55,897 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 18:00:56,645 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 18:00:56,681 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 19:19:47,396 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 19:19:52,289 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 19:20:10,255 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 19:20:10,258 - INFO - Streangth_cehck_for_lage_data - showing_sample
+2025-06-03 19:20:53,569 - INFO - Streangth_cehck_for_lage_data - gettig fraction of the data for test run
+2025-06-03 19:20:53,575 - INFO - Streangth_cehck_for_lage_data - creating udf for encoding
+2025-06-03 19:20:53,578 - INFO - Streangth_cehck_for_lage_data - apply udf to sample data set
+2025-06-03 19:20:53,626 - INFO - Streangth_cehck_for_lage_data - droping normal password column form encoded_df
+2025-06-03 19:20:53,638 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-03 19:20:54,093 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-03 19:20:54,375 - INFO - Streangth_cehck_for_lage_data - transforming label and features into index
+2025-06-03 19:20:54,506 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 19:21:55,908 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 19:21:55,951 - INFO - Streangth_cehck_for_lage_data - initiating RNN model
+2025-06-03 19:32:37,057 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 19:32:42,223 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 19:33:00,295 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 19:33:00,299 - INFO - Streangth_cehck_for_lage_data - showing_sample
+2025-06-03 19:33:42,183 - INFO - Streangth_cehck_for_lage_data - gettig fraction of the data for test run
+2025-06-03 19:33:42,187 - INFO - Streangth_cehck_for_lage_data - creating udf for encoding
+2025-06-03 19:33:42,188 - INFO - Streangth_cehck_for_lage_data - apply udf to sample data set
+2025-06-03 19:33:42,230 - INFO - Streangth_cehck_for_lage_data - droping normal password column form encoded_df
+2025-06-03 19:33:42,246 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-03 19:33:42,726 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-03 19:33:43,015 - INFO - Streangth_cehck_for_lage_data - transforming label and features into index
+2025-06-03 19:33:43,172 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 19:34:44,361 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 19:34:44,424 - INFO - Streangth_cehck_for_lage_data - initiating RNN model
+2025-06-03 19:46:43,706 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 19:46:49,019 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 19:47:05,769 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 19:47:05,773 - INFO - Streangth_cehck_for_lage_data - showing_sample
+2025-06-03 19:47:49,098 - INFO - Streangth_cehck_for_lage_data - gettig fraction of the data for test run
+2025-06-03 19:47:49,103 - INFO - Streangth_cehck_for_lage_data - creating udf for encoding
+2025-06-03 19:47:49,105 - INFO - Streangth_cehck_for_lage_data - apply udf to sample data set
+2025-06-03 19:47:49,141 - INFO - Streangth_cehck_for_lage_data - droping normal password column form encoded_df
+2025-06-03 19:47:49,154 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-03 19:47:49,683 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-03 19:47:49,933 - INFO - Streangth_cehck_for_lage_data - transforming label and features into index
+2025-06-03 19:47:50,047 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 19:48:50,269 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 19:48:50,298 - INFO - Streangth_cehck_for_lage_data - initiating RNN model
+2025-06-03 19:49:22,683 - INFO - Streangth_cehck_for_lage_data - Epoch: 1, Loss: 808.3213
+2025-06-03 19:49:54,538 - INFO - Streangth_cehck_for_lage_data - Epoch: 2, Loss: 505.3303
+2025-06-03 19:50:26,616 - INFO - Streangth_cehck_for_lage_data - Epoch: 3, Loss: 428.5202
+2025-06-03 19:50:58,763 - INFO - Streangth_cehck_for_lage_data - Epoch: 4, Loss: 403.0911
+2025-06-03 19:51:31,776 - INFO - Streangth_cehck_for_lage_data - Epoch: 5, Loss: 389.7667
+2025-06-03 19:51:31,776 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 20:07:30,757 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 20:07:35,156 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 20:07:51,323 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 20:07:51,327 - INFO - Streangth_cehck_for_lage_data - showing_sample
+2025-06-03 20:08:34,504 - INFO - Streangth_cehck_for_lage_data - gettig fraction of the data for test run
+2025-06-03 20:08:34,511 - INFO - Streangth_cehck_for_lage_data - creating udf for encoding
+2025-06-03 20:08:34,512 - INFO - Streangth_cehck_for_lage_data - apply udf to sample data set
+2025-06-03 20:08:34,550 - INFO - Streangth_cehck_for_lage_data - droping normal password column form encoded_df
+2025-06-03 20:08:34,564 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-03 20:08:35,121 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-03 20:08:35,453 - INFO - Streangth_cehck_for_lage_data - transforming label and features into index
+2025-06-03 20:08:35,593 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 20:09:36,474 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 20:09:36,505 - INFO - Streangth_cehck_for_lage_data - initiating RNN model
+2025-06-03 20:10:09,424 - INFO - Streangth_cehck_for_lage_data - Epoch: 1, Loss: 830.7584
+2025-06-03 20:10:41,589 - INFO - Streangth_cehck_for_lage_data - Epoch: 2, Loss: 494.2024
+2025-06-03 20:11:13,787 - INFO - Streangth_cehck_for_lage_data - Epoch: 3, Loss: 429.5319
+2025-06-03 20:11:45,748 - INFO - Streangth_cehck_for_lage_data - Epoch: 4, Loss: 402.5362
+2025-06-03 20:12:18,585 - INFO - Streangth_cehck_for_lage_data - Epoch: 5, Loss: 393.3762
+2025-06-03 20:12:50,587 - INFO - Streangth_cehck_for_lage_data - Epoch: 6, Loss: 387.1470
+2025-06-03 20:13:22,849 - INFO - Streangth_cehck_for_lage_data - Epoch: 7, Loss: 387.0585
+2025-06-03 20:13:54,908 - INFO - Streangth_cehck_for_lage_data - Epoch: 8, Loss: 376.4573
+2025-06-03 20:14:27,442 - INFO - Streangth_cehck_for_lage_data - Epoch: 9, Loss: 379.2031
+2025-06-03 20:15:00,421 - INFO - Streangth_cehck_for_lage_data - Epoch: 10, Loss: 385.4463
+2025-06-03 20:15:09,242 - INFO - Streangth_cehck_for_lage_data - Final Accuracy:97.8844%
+2025-06-03 20:15:09,243 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 20:35:09,968 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 20:35:14,595 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 20:35:30,914 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 20:35:30,918 - INFO - Streangth_cehck_for_lage_data - showing_sample
+2025-06-03 20:36:13,623 - INFO - Streangth_cehck_for_lage_data - gettig fraction of the data for test run
+2025-06-03 20:36:13,628 - INFO - Streangth_cehck_for_lage_data - creating udf for encoding
+2025-06-03 20:36:13,630 - INFO - Streangth_cehck_for_lage_data - apply udf to sample data set
+2025-06-03 20:36:13,668 - INFO - Streangth_cehck_for_lage_data - droping normal password column form encoded_df
+2025-06-03 20:36:13,681 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-03 20:36:14,187 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-03 20:36:14,445 - INFO - Streangth_cehck_for_lage_data - transforming label and features into index
+2025-06-03 20:36:14,577 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 20:37:15,055 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 20:37:15,760 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 20:37:15,822 - INFO - Streangth_cehck_for_lage_data - initiating RNN model
+2025-06-03 20:37:48,539 - INFO - Streangth_cehck_for_lage_data - Epoch: 1, Loss: 785.4273
+2025-06-03 20:38:20,532 - INFO - Streangth_cehck_for_lage_data - Epoch: 2, Loss: 451.4756
+2025-06-03 20:38:52,600 - INFO - Streangth_cehck_for_lage_data - Epoch: 3, Loss: 404.6164
+2025-06-03 20:39:24,662 - INFO - Streangth_cehck_for_lage_data - Epoch: 4, Loss: 407.0574
+2025-06-03 20:39:56,788 - INFO - Streangth_cehck_for_lage_data - Epoch: 5, Loss: 385.8803
+2025-06-03 20:40:28,826 - INFO - Streangth_cehck_for_lage_data - Epoch: 6, Loss: 378.7344
+2025-06-03 20:41:00,927 - INFO - Streangth_cehck_for_lage_data - Epoch: 7, Loss: 375.3187
+2025-06-03 20:41:32,970 - INFO - Streangth_cehck_for_lage_data - Epoch: 8, Loss: 378.6483
+2025-06-03 20:42:05,048 - INFO - Streangth_cehck_for_lage_data - Epoch: 9, Loss: 370.4968
+2025-06-03 20:42:37,301 - INFO - Streangth_cehck_for_lage_data - Epoch: 10, Loss: 368.5810
+2025-06-03 20:42:46,071 - INFO - Streangth_cehck_for_lage_data - Final Accuracy:97.8927%
+2025-06-03 20:42:46,153 - INFO - Streangth_cehck_for_lage_data - confusion_matrix:[[102087      1      0]
+ [  2695  38346      0]
+ [     0    327      0]]
+2025-06-03 21:15:54,648 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 21:15:59,459 - INFO - Streangth_cehck_for_lage_data - reading parquet file
+2025-06-03 21:16:15,601 - INFO - Streangth_cehck_for_lage_data - printing schema
+2025-06-03 21:16:15,605 - INFO - Streangth_cehck_for_lage_data - creating udf for encoding
+2025-06-03 21:16:15,608 - INFO - Streangth_cehck_for_lage_data - apply udf to sample data set
+2025-06-03 21:16:15,671 - INFO - Streangth_cehck_for_lage_data - droping normal password column form encoded_df
+2025-06-03 21:17:05,984 - INFO - Streangth_cehck_for_lage_data - loading index label model
+2025-06-03 21:17:06,400 - INFO - Streangth_cehck_for_lage_data - loading index feature model
+2025-06-03 21:17:06,617 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index label
+2025-06-03 21:17:06,706 - INFO - Streangth_cehck_for_lage_data - transforming test df to index label
+2025-06-03 21:17:06,734 - INFO - Streangth_cehck_for_lage_data - transforming train_df to index feature
+2025-06-03 21:17:06,758 - INFO - Streangth_cehck_for_lage_data - transforming test_df to index feature
+2025-06-03 21:22:00,007 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 21:30:22,270 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 21:30:52,734 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 21:32:59,192 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 21:33:30,367 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 21:33:54,963 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 21:33:55,410 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 21:33:55,493 - INFO - Streangth_cehck_for_lage_data - initiating RNN model
+2025-06-03 21:34:07,034 - INFO - Streangth_cehck_for_lage_data - Epoch: 1, Loss: 644.4160
+2025-06-03 21:34:17,219 - INFO - Streangth_cehck_for_lage_data - Epoch: 2, Loss: 339.9969
+2025-06-03 21:34:27,446 - INFO - Streangth_cehck_for_lage_data - Epoch: 3, Loss: 282.4571
+2025-06-03 21:34:37,544 - INFO - Streangth_cehck_for_lage_data - Epoch: 4, Loss: 264.6282
+2025-06-03 21:34:47,632 - INFO - Streangth_cehck_for_lage_data - Epoch: 5, Loss: 252.4109
+2025-06-03 21:34:57,843 - INFO - Streangth_cehck_for_lage_data - Epoch: 6, Loss: 245.0877
+2025-06-03 21:35:08,044 - INFO - Streangth_cehck_for_lage_data - Epoch: 7, Loss: 241.3778
+2025-06-03 21:35:18,111 - INFO - Streangth_cehck_for_lage_data - Epoch: 8, Loss: 238.4240
+2025-06-03 21:35:28,417 - INFO - Streangth_cehck_for_lage_data - Epoch: 9, Loss: 234.0727
+2025-06-03 21:35:38,900 - INFO - Streangth_cehck_for_lage_data - Epoch: 10, Loss: 230.8218
+2025-06-03 21:35:39,519 - INFO - Streangth_cehck_for_lage_data - Final Accuracy:96.1800%
+2025-06-03 21:35:39,528 - INFO - Streangth_cehck_for_lage_data - confusion_matrix:[[7114   10    0]
+ [ 197 2492  175]
+ [   0    0   12]]
+2025-06-03 22:19:42,552 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 22:20:11,393 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 22:20:12,820 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 22:20:13,655 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 22:20:13,682 - INFO - Streangth_cehck_for_lage_data - initiating RNN model
+2025-06-03 22:20:24,509 - INFO - Streangth_cehck_for_lage_data - Epoch: 1, Loss: 587.9770
+2025-06-03 22:20:34,679 - INFO - Streangth_cehck_for_lage_data - Epoch: 2, Loss: 314.9675
+2025-06-03 22:20:44,724 - INFO - Streangth_cehck_for_lage_data - Epoch: 3, Loss: 274.0643
+2025-06-03 22:20:54,727 - INFO - Streangth_cehck_for_lage_data - Epoch: 4, Loss: 259.1836
+2025-06-03 22:21:04,741 - INFO - Streangth_cehck_for_lage_data - Epoch: 5, Loss: 248.5540
+2025-06-03 22:21:14,934 - INFO - Streangth_cehck_for_lage_data - Epoch: 6, Loss: 243.9069
+2025-06-03 22:21:24,959 - INFO - Streangth_cehck_for_lage_data - Epoch: 7, Loss: 238.8425
+2025-06-03 22:21:34,995 - INFO - Streangth_cehck_for_lage_data - Epoch: 8, Loss: 234.3534
+2025-06-03 22:21:45,149 - INFO - Streangth_cehck_for_lage_data - Epoch: 9, Loss: 233.2829
+2025-06-03 22:21:55,185 - INFO - Streangth_cehck_for_lage_data - Epoch: 10, Loss: 231.0233
+2025-06-03 22:25:43,335 - INFO - Streangth_cehck_for_lage_data - getting spark
+2025-06-03 22:26:12,863 - INFO - Streangth_cehck_for_lage_data - turning data into pandas
+2025-06-03 22:26:14,493 - INFO - Streangth_cehck_for_lage_data - showing heade 3 lines after panda transformation
+2025-06-03 22:26:14,514 - INFO - Streangth_cehck_for_lage_data - initiating RNN model
+2025-06-03 22:26:25,702 - INFO - Streangth_cehck_for_lage_data - Epoch: 1, Loss: 633.2153
+2025-06-03 22:26:35,704 - INFO - Streangth_cehck_for_lage_data - Epoch: 2, Loss: 328.2054
+2025-06-03 22:26:46,289 - INFO - Streangth_cehck_for_lage_data - Epoch: 3, Loss: 282.5679
+2025-06-03 22:26:56,343 - INFO - Streangth_cehck_for_lage_data - Epoch: 4, Loss: 264.9073
+2025-06-03 22:27:06,359 - INFO - Streangth_cehck_for_lage_data - Epoch: 5, Loss: 259.8931
+2025-06-03 22:27:16,227 - INFO - Streangth_cehck_for_lage_data - Epoch: 6, Loss: 253.6918
+2025-06-03 22:27:26,110 - INFO - Streangth_cehck_for_lage_data - Epoch: 7, Loss: 244.5573
+2025-06-03 22:27:36,163 - INFO - Streangth_cehck_for_lage_data - Epoch: 8, Loss: 240.3631
+2025-06-03 22:27:46,058 - INFO - Streangth_cehck_for_lage_data - Epoch: 9, Loss: 236.3679
+2025-06-03 22:27:56,208 - INFO - Streangth_cehck_for_lage_data - Epoch: 10, Loss: 234.5398
+2025-06-03 22:47:31,281 - INFO - Streangth_cehck_for_lage_data - Final Accuracy:95.9386%
+2025-06-03 22:47:36,474 - INFO - Streangth_cehck_for_lage_data - confusion_matrix:[[10110330    15231       13]
+ [  281728  3527790   281130]
+ [      24      156    22057]]
+2025-06-03 22:47:36,474 - INFO - Streangth_cehck_for_lage_data - stoping spark
+2025-06-03 22:50:49,316 - INFO - Streangth_cehck_for_lage_data -               precision    recall  f1-score   support
+
+        Weak       0.97      1.00      0.99  10125574
+      Medium       1.00      0.86      0.92   4090648
+      Strong       0.07      0.99      0.14     22237
+
+    accuracy                           0.96  14238459
+   macro avg       0.68      0.95      0.68  14238459
+weighted avg       0.98      0.96      0.97  14238459
+
+2025-06-03 22:50:57,995 - INFO - Streangth_cehck_for_lage_data - model is saved
