@@ -42,7 +42,7 @@ This project tackles the real-world challenge of classifying password strength u
 - 📊 Achieved **~96% accuracy**, macro F1-score of **0.68+** even under class imbalance
 
 ## 🧠 Architecture Overview
-```mermaid
+
 graph TD
     A[rockyou.txt + HIBP Data] -->|Preprocessing + Hashing| B[Feature Extraction]
     B --> C[Class Balancing / Downsampling]
@@ -51,7 +51,7 @@ graph TD
     D1 --> E[Evaluation]
     D2 --> E
     E --> F[Web UI + Logs + Performance]
-```
+
 
 ## 🗂️ Technologies Used
 - Apache Spark — for distributed processing
